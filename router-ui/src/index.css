@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.table-container {
+		@apply flex flex-col p-1 bg-black border border-red-500 ;
+	}
+	.table {
+		@apply relative min-w-full border divide-y divide-gray-200 shadow border-gray-50;
+	}
+	.table-header {
+		@apply border-t border-gray-200 bg-gray-50;
+	}
+	.table-head {
+		@apply px-6 py-3 text-base font-medium tracking-wider text-left text-gray-900;
+	}
+	.table-body {
+		@apply bg-black border border-red-500 divide-y divide-gray-200;
+	}
+	.table-data {
+		@apply px-6 py-4 text-sm font-medium text-gray-500 min-w-fit whitespace-nowrap;
+	}
+	.col-first {
+		@apply text-gray-900;
+	}
+	.edit-actions {
+		@apply flex justify-between pr-4;
+	}
+	.edit-btn {
+		@apply px-6 text-center text-indigo-600 cursor-pointer hover:text-indigo-900;
+	}
+	.striped {
+		@apply bg-gray-50;
+	}
+	.sticky-header {
+		@apply sticky top-0 pt-2;
+	}
+}
