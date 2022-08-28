@@ -43,6 +43,6 @@ export const Charts = ({
 	}, [loading]);
 
 	return (
-		<div ref={chartRef} style={{ width: '100%',height:'400px', ...style }} />
+		<div ref={chartRef} style={{ width: '100%',height:'300px', ...style }} />
 	);
 };

@@ -61,7 +61,10 @@ const Dashboard = () => {
     return (<div>
         <Navbar />
         <div className='flex justify-center w-full py-4 text-3xl font-extrabold text-white'>Bridge Explorer</div>
-        <div className='flex justify-end m-2'>
+        <div className='flex justify-end m-2 space-x-2'>
+        <div className='w-32 p-2 text-xs font-bold bg-red-500 rounded-md cursor-pointer '>
+            Launch Voyager
+            </div> 
         <div className='w-32 p-2 text-xs font-bold bg-red-500 rounded-md cursor-pointer '>
         {!active ?
             <div onClick={() => connect()} >Connect to My meta mask</div>
